@@ -12,10 +12,10 @@ The next step was to focus only on one area or station to get accurate results. 
 A target column was then created, where each record (day) had the tmax of the following record, and the very last target record had the same value as the one above it. 
 
 ## Training the model
-We first define a list of columns to exclude from the predictors and create a list of predictors by excluding these columns from the weather dataset. We then perform the backtesting by creating a function that iterates over the dataset with a start value of 3650 (10 years) and a step size of 90. For each iteration, we train the model on the data up to the current index and make predictions for the next 90 days. The difference between the predicted and actual values for each prediction was calculated and stored in a list. 
+We first define a list of columns to exclude from the predictors and create a list of predictors by excluding these columns from the weather dataset. We then perform the backtesting by creating a function that iterates over the dataset with a start value of 3650 (10 years) and a step size of 90. For each iteration, we train the model on the data up to the current index and make predictions for the next 90 days. The differences between the predicted and actual values for each prediction were calculated and stored in a list. 
 
 ## Making Predictions
-The backTest function is used to generate predictions for the weather using a Ridge regression model and the predictors we defined earlier. The mean absolute error between the actual and predicted values was 3.2 degrees.
+The backTest function was used to generate predictions for the weather using a Ridge regression model and the predictors we defined earlier. The mean absolute error between the actual and predicted values was 3.2 degrees.
 
 ![download (2)](https://github.com/sottohy/Weather-Prediction/assets/91037437/9d00c822-2760-4f9e-a0f3-b32cc12154ba)
 
