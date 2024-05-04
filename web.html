@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasting</title>
+    <link rel="stylesheet" href="\static\css\style.css">
+    
+</head>
+<body>
+    <form action="/predict" method="POST" class="main">
+        <div class="inputs">
+            <div>
+                <label for="tmin">Minimum Temperature</label><br>
+                <input id="tmin" name="MinTemp" type="number" style="margin-top: 10px;"><br>
+            </div>
+            
+            <div>
+                <label for="tmax">Maximum Temperature</label><br>
+                <input id="tmax" name="MaxTemp" type="number" style="margin-top: 10px;"><br>
+            </div>
+            
+            <div>
+                <label for="tavg">Average Temperature</label><br>
+                <input id="tavg" name="AvgTemp" type="number" style="margin-top: 10px;"><br>    
+            </div>
+        </div>
+        
+        <button type="submit">Predict</button>
+    </form>
+    <div class="main">
+        {{prediction_text}}
+    </div>
+</body>
+</html>
