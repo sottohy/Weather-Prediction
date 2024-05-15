@@ -20,7 +20,7 @@ The backTest function was used to generate predictions for the weather using a R
 ![download (2)](https://github.com/sottohy/Weather-Prediction/assets/91037437/9d00c822-2760-4f9e-a0f3-b32cc12154ba)
 
 ## Creating the Website
-The website was created using HTML,CSS, and connected to the model using Flask.
+The website was created using HTML, CSS, and connected to the model using Flask.
 
 https://github.com/sottohy/Weather-Prediction/assets/91037437/62acb41e-2740-4803-98f6-59a6abd43d43
 
